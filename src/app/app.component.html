@@ -1,0 +1,12 @@
+<h1>
+  <app-progress-bar 
+  [progress]="counterProgress">
+  </app-progress-bar>
+
+  <app-countdown #countdown 
+  [init]="totalCountdown"
+  (onDrecrease)="updateProgress($event)"
+  (onComplete)="countdownFinished()">
+  </app-countdown>
+  <button (click)="countdown.startCountdown(); counterProgress=0;"> Reverse</button>
+</h1>
