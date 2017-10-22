@@ -14,10 +14,10 @@ export class AppComponent {
 
   updateProgress($event){
     this.counterProgress = (this.totalCountdown - $event)/this.totalCountdown*100;
+ 
   }
 
   countdownFinished(){
     console.log("countdown has finished");
   }
-
 }
